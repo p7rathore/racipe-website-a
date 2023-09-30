@@ -1,0 +1,501 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+.main{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.nav{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.name{
+    display: flex;
+}
+.im{
+    height: 50px;
+    width: 50px;
+    margin-top: 2px;
+}
+.name1{
+    margin-top: 6px;
+    
+}
+.ul{
+    display: flex;
+    margin-top: 8px;
+}
+.li{
+    margin: 10px;
+    padding: 0 8px;
+    list-style-type: none;
+    font-size: 18px;
+    
+}
+a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* burger text*/
+.show{
+    display: flex;
+    justify-content: space-around;
+}
+.summeri{
+    height: 300px;
+    width: 500px;
+    margin-top: 150px;
+}
+.h1{
+    text-align: center;
+    margin: 25px;
+    font-size: 35px;
+}
+.p{
+    text-align: center;
+    margin: 25px;
+    font-size: 20px;
+}
+#btn{
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 90px;
+    margin-top: 60px;
+}
+#btn:hover{
+    background-color: gold;
+    color: rgb(21, 7, 7);
+    transition: 1s;
+}
+.burger{
+    height: 700px;
+    width: 700px;
+    margin-top: -90px;
+ 
+    
+}
+/*text*/
+.h{
+    text-align: center;
+    margin-top: 20px;
+}
+/*serach*/
+.ser{
+   
+    margin-left: 520px;
+    margin-top: 50px;
+}
+#serach{
+    height: 50px;
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+}
+#ser-btn{
+    height: 52px;
+    width: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: gold;
+}
+#ser-btn:hover{
+    background-color: rgb(8, 214, 246);
+    transition: 1s;
+}
+/*meals-data-list*/
+.meals-data-list{
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 100px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(250px,1fr));
+    gap: 12px;
+   
+}
+.malis-data{
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+}
+.data-img{
+    height: 250px;
+    width:300px; 
+    background-color: aquamarine;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.data-img:hover{
+    height:260px ;
+    width:310px ;
+    transition: 2s;
+}
+.males-name{
+    text-align: center;
+    margin: 10px;
+}
+.males-btn{
+    height: 40px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.males-btn:hover{
+    background-color: rgb(8, 214, 246);
+    color: white;
+    transition: 1s;
+}
+
+/*racipe.html start*/
+.man-racipes{
+    height: 700px;
+    width: 100%;
+    background-color:rgba(255,240,217,255);
+}
+.racipr-text-img{
+    display: flex;
+    justify-content: space-around;
+}
+.racipe-t{
+    height: 300px;
+    width: 500px;
+    margin-top: 230px;
+}
+.cooking-lin-text{
+    text-align: center;
+    margin: 10px;
+}
+.think-racipe-text{
+    text-align: center;
+    margin: 10px;
+}
+.think-img{
+    height: 700px;
+    width: 700px;
+   
+}
+.get-text{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*racipe data show*/
+
+.racipedata{
+    height: 1300px;
+    width: auto;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+   display: none;
+}
+.dataimg{
+    height: 600px;
+    width: 1100px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 190px;
+}
+.mail-name{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.p{
+    text-align: center;
+}
+.p-data{
+    height: 400px;
+    width: 1000px;
+    margin-top: 30px;
+}
+.mmeals-data{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -150px;
+    margin-left: -80px;
+}
+.mals{
+    margin: 15px;
+    list-style-type: none;
+}
+.cross{
+    font-size: 40px;
+    margin-left:180px;
+    margin-top: 150px;
+    color: red;
+    cursor: pointer;
+    display: none;
+   
+}
+.hiddenrecipedata{
+    display: block;
+}
+/*lodding*/
+.lodding{
+    text-align: center;
+}
+/* racipe page responsive*/
+/*.....................mobile.........................*/
+@media (max-width:768px) {
+    .man-racipes{
+        background-color: #fff0d9;
+        width: 100%;
+    }
+    .racipr-text-img {
+        display: block;
+        
+    }
+    .racipe-t {
+        height: 300px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .think-im{
+        height: 400px;
+        width: 100%;
+        margin-top: -70px;
+    }
+    #serach {
+        height: 50px;
+        width: 200px;
+    }
+    .ser {
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    .think-img {
+        height: 700px;
+        width: 100%;
+    }
+    .dataimg {
+        height: 400px;
+         width: 100%;
+        /* border-radius: 5px; */
+        /* margin-top: 20px; */
+        /* margin-left: 190px; */
+    }
+    .racipedata{
+        width: 100%;
+        height: auto;
+    }
+    .mmeals-data{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .dataimg{
+        margin-left: 0px;
+    }
+    .p-data {
+        height: 400px;
+        width: 100%;
+        /* margin-left: 240px; */
+        margin-top: 30px;
+    }
+    .para-racipe{
+        height: 400px;
+        overflow: hidden;
+        overflow-y: scroll;
+        margin: 5px;
+    }
+}
+/*....................tablets and ipad.....................,........*/
+@media (min-width:769px) {
+    .man-racipes{
+
+        width: 100%;
+    }
+    .think-img,.think-im {
+        height: 400px;
+        width: 400px;
+    }
+    .ser {
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+    .think-img {
+        height: 700px;
+        width: 700px;
+        margin-top: 120px;
+    }
+    .racipedata{
+        width: 100%;
+        height: auto;
+    }
+    .mmeals-data{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .dataimg{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .p-data {
+        height: 400px;
+        width: 100%;
+        /* margin-left: 240px; */
+        margin-top: 30px;
+    }
+    .para-racipe{
+        height: 400px;
+        overflow: hidden;
+        overflow-y: scroll;
+        margin: 5px;
+    }
+   
+}
+/*....................laptops , desktops.....................,........*/
+@media (min-width:1023px) {
+    .man-racipes{
+        width: 100%;
+    }
+    .racipe-t{
+        height: 300px;
+        width: 500px;
+        margin-top: 230px;
+    }
+    .think-im{
+        height: 600px;
+        width: 600px;
+       margin-top: -100px;
+    }
+    .ser{
+        margin-left: 500px;
+    }
+    /*racipe data show*/
+
+  
+.dataimg{
+    height: 600px;
+    width: 1100px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 190px;
+}
+.mail-name{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.p{
+    text-align: center;
+}
+.p-data{
+    height: 400px;
+    width: 1000px;
+    margin-top: 30px;
+    margin-left: 250px;
+}
+.mmeals-data{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -150px;
+    margin-left: -80px;
+}
+.mmeals-data{
+   
+    margin-top: 40px;
+}
+
+}
+
+/* home page responsive*/
+
+/*.....................mobile.........................*/
+@media (max-width:768px) {
+    .main{
+       
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+    }
+    .show{
+        display: block;
+    }
+    #btn{
+        display: none;
+    }
+   .burger{
+    height: 400px;
+    width: 100%;
+   }
+   .summeri{
+    width: 100%;
+    margin-top: -5px;
+   }
+   .name1{
+    font-size: 1rem;
+    margin-top: 1.1rem;
+    margin-left: 1rem;
+   }
+}
+/*....................tablets and ipad.....................,........*/
+@media (min-width:769px) {
+    .main{
+        width: 100%;
+    }
+    .burger{
+        height: 700px;
+        width: 100%;
+       }
+       .show{
+        width: 100%;
+        margin-top: 80px;
+     
+       }
+       .burger{
+        height: 500px;
+        width: 100%;
+   
+       }
+       .summeri{
+        width: 100%;
+        margin-top: 50px;
+
+       }
+    .nav{
+        width: 100%;
+    }
+    .meals-data-list{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+        grid-template-rows: repeat(auto-fit,minmax(350px,1fr));
+        gap: 12px;
+       
+    }
+}
+/*....................laptops , desktops.....................,........*/
+
+@media (min-width:1023px) {
+    .main{
+        width: 100%;
+    }
+    .burger{
+        height: 700px;
+        width: 700px;
+        margin-top: -190px;
+    }
+    .summeri{
+        height: 300px;
+        width: 500px;
+        margin-top: 30px;
+    }
+   
+}
